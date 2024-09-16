@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosta Tabela z rowspan i colspan</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prosta Tabela z rowspan i colspan</h1>
+    <table>
+        <tr>
+            <td colspan="2">Połączone Komórki (colspan=2)</td>
+            <td>Komórka 3</td>
+            <td>Komórka 4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Komórka z rowspan=2</td>
+            <td>Komórka 2</td>
+            <td>Komórka 3</td>
+            <td>Komórka 4</td>
+        </tr>
+        <tr>
+            <td>Komórka 6</td>
+            <td>Komórka 7</td>
+            <td>Komórka 8</td>
+        </tr>
+        <tr>
+            <td>Komórka 9</td>
+            <td>Komórka 10</td>
+            <td>Komórka 11</td>
+            <td>Komórka 12</td>
+        </tr>
+    </table>
+</body>
+</html>
