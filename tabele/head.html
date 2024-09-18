@@ -3,19 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umieszczanie CSS w head</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Tabela: Style w Head</title>
+    <style>
+        table {
+            border: 2px solid red;
+            width: 60%;
+            color: green;
+            font-size: 18px;
+        }
+        .code-block {
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            font-family: monospace;
+        }
+    </style>
 </head>
 <body>
-    <h2>Umieszczanie CSS w head</h2>
-    <blockquote>
-        <code>
-            &lt;head&gt;<br>
-            &lt;style&gt;<br>
-            body { font-family: Arial; }<br>
-            &lt;/style&gt;<br>
-            &lt;/head&gt;
-        </code>
-    </blockquote>
+    <h2>Tabela z wykorzystaniem stylów w head</h2>
+    <table>
+        <tr>
+            <td>Komórka 1</td>
+            <td>Komórka 2</td>
+            <td>Komórka 3</td>
+        </tr>
+    </table>
+
+    <div class="code-block">
+        <pre>table {
+    border: 2px solid red;
+    width: 60%;
+    color: green;
+    font-size: 18px;
+}</pre>
+    </div>
 </body>
 </html>
