@@ -3,15 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umieszczanie CSS w zewnętrznym pliku</title>
+    <title>Tabela: Style w Zewnętrznym Pliku CSS</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .code-block {
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            font-family: monospace;
+        }
+    </style>
 </head>
 <body>
-    <h2>Umieszczanie CSS w zewnętrznym pliku</h2>
-    <blockquote>
-        <code>
-            &lt;link rel="stylesheet" href="styles.css"&gt;
-        </code>
-    </blockquote>
+    <h2>Tabela z wykorzystaniem zewnętrznego pliku CSS</h2>
+    <table>
+        <tr>
+            <td>Komórka 1</td>
+            <td>Komórka 2</td>
+            <td>Komórka 3</td>
+        </tr>
+    </table>
+
+    <div class="code-block">
+        <pre>&lt;link rel="stylesheet" href="styles.css"&gt;</pre>
+    </div>
+
+    <div class="code-block">
+        <pre>/* styles.css */
+table {
+    border: 2px solid blue;
+    width: 70%;
+    color: orange;
+    font-size: 20px;
+}</pre>
+    </div>
 </body>
 </html>
