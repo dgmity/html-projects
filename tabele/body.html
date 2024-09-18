@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela ze stylem w body</title>
+    <title>Tabela: Style w Body</title>
+    <style>
+        .code-block {
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            font-family: monospace;
+        }
+    </style>
 </head>
 <body>
-    <h2>Tabela z wykorzystaniem style w body</h2>
+    <h2>Tabela z wykorzystaniem stylów w body (inline)</h2>
     <table style="border: 2px solid black; width: 50%; color: blue; font-size: 16px;">
         <tr>
             <td>Komórka 1</td>
@@ -14,5 +23,9 @@
             <td>Komórka 3</td>
         </tr>
     </table>
+
+    <div class="code-block">
+        <pre>&lt;table style="border: 2px solid black; width: 50%; color: blue; font-size: 16px;"&gt;</pre>
+    </div>
 </body>
 </html>
