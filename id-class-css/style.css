@@ -1,1 +1,29 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: purple;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    color: purple;
+    background-color: black;
+}
+
+.section {
+    font-size: 18px;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+}
