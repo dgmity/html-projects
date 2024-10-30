@@ -2,6 +2,11 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
 }
 
 #header {
@@ -12,6 +17,7 @@ html, body {
     color: purple;
     background-color: black;
     border: 2px solid white;
+    margin: 10px;
 }
 
 #main {
@@ -19,11 +25,47 @@ html, body {
     flex-direction: row;
     color: purple;
     background-color: black;
+    height: 80%;
+    justify-items: center;
 }
 
-.section {
-    font-size: 18px;
+#section {
+    display: flex;
+    border: 2px solid white;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;;
+}
+
+.sections {
+    color: brown;
     margin: 5px;
-    padding: 5px;
+    font-size: 20px;
+}
+
+.content {
+    border: 2px solid white;
+    width: 80%;
+    margin: 10px;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.sidebar {
+    border: 2px solid white;
+    width: 20%;
+    margin: 20px;
+    padding: 10px;
+    font-style: normal;
+    
+}
+
+#footer {
+    display: flex;
+    color: white;
+    align-content: center;
+    border: 2px solid white;
+    margin: 10px;
     justify-content: center;
+    background-color: brown;
 }
