@@ -1,44 +1,67 @@
-body {
-    font-family: Arial sans-serif;
-    margin: 0; 
-    padding: 0; 
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333; 
-    color: #fff; 
-    padding: 20px; 
-    text-align: center;
-}
-
-h1 {
+html, body {
+    box-sizing: border-box;
+    height: 100%;
     margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    color: white;
+    margin: 10px;
 }
 
 main {
-    padding: 20px; 
-    max-width: 800px; 
-    margin: auto;
+    display: flex;
+    margin: 10px;
+    gap: 10px; 
+    width: calc(100% - 20px); 
+    height: 85%;
+}
+
+#content {
+    color: white;
+    border: 2px solid white;
+    flex-grow: 1; 
+}
+
+#sidebar {
+    color: white;
+    border: 2px solid white;
+    width: 18.5%;
+}
+
+footer {
+    display: flex;
+    color: white;
+    margin: 10px;
+    border: 2px solid white;
 }
 
 p {
-    font-size: 18px; 
-    line-height: 1.6;
-}
-
-ul {
-    list-style-type: none; 
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
+    color: #ffffff;           /* Белый цвет текста */
+    font-size: 18px;          /* Оптимальный для чтения размер */
+    line-height: 1.6;         /* Увеличенный межстрочный интервал */
+    margin-bottom: 1.5em;     /* Отступ между абзацами */
+    max-width: 600px;         /* Ограниченная ширина для удобства чтения */
+    font-family: 'Roboto', sans-serif; /* Четкий современный шрифт */
+    margin: 5px;
 }
 
 a {
-    text-decoration: none; 
-    color: #333; 
-    font-size: 18px; 
-    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+footer p {
+    color: grey;
 }
