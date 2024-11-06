@@ -1,0 +1,48 @@
+html, body {
+    margin: 2px;
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+#first {
+    font-size: 52px;
+}
+
+#second {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+}
+
+#third {
+    color: purple;
+}
+
+#fourth {
+    text-transform: uppercase;
+}
+
+#fifth {
+    font-style: italic;
+}
+
+#sixth {
+    letter-spacing: 5px;
+}
+
+#seventh {
+    text-align: right;
+    margin: 5px;
+    padding: 5px;
+    font-size: large;
+}
+
+#eighth {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#nineth {
+    line-height: 100px;
+    border: 2px solid black;
+}
