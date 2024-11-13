@@ -1,0 +1,41 @@
+html, body {
+    background-color: rgb(47, 50, 54);
+    box-sizing: border-box;
+}
+a.website:hover {
+    color: red;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+a.reddit:active {
+    color: green;
+    background-color: black;
+    border: 3px solid red;
+}
+
+a.youtube:link {
+    color:blueviolet;
+    text-decoration: underline;
+}
+
+a.telegram:visited {
+    color:aqua;
+    background-color: brown;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 30px;
+    align-content: space-between;
+    height: 100px;
+    justify-content: center;
+}
+
+a {
+    text-align: center;
+}
