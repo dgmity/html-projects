@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image-motor {
+    position: absolute;
+    z-index: -1;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#left {
+    background-color: rgba(0, 100, 0, 0.6);
+    margin: 2%;
+    width: 75%;
+    height: 600px;
+    font-size: 120%;
+    box-shadow: 10px;
+}
+
+#right {
+    background-color: rgba(0,100,0,0.6);
+    margin: 1%;
+    width: 15%;
+    height: 300px;
+}
+
+#upper {
+
+}
+
+#lower {
+
+}
+
+#header {
+    background-color: rgba(60, 120, 160, 0.9);
+    color: white;
+    font-size: 150%;
+    padding: 10px;
+}
