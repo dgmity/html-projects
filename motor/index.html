@@ -7,17 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img class="image-motor" src="motor.png" alt="motocykle">
-    <header id="header">
+
+    <header>
         <h1>Motocykle - moja pasja</h1>
     </header>
-    <main id="container">
+
+    <div id="content">
+
         <section id="left">
-           <h2 style="text-align: center;">Gdzie pojechać?</h2> 
+            <h2>Gdzie pojechać?</h2>
+            <dl>
+                <dt>Góry</dt>
+                <dd>Wspaniałe widoki i kręte drogi górskie.</dd>
+                <dt>Morze</dt>
+                <dd>Idealne miejsce na letnią przygodę.</dd>
+                <dt>Las</dt>
+                <dd>Trasy w lesie to prawdziwe wyzwanie.</dd>
+                <dt>Miasto</dt>
+                <dd>Niepowtarzalna atmosfera i miejskie szlaki.</dd>
+                <dt>Wieś</dt>
+                <dd>Spokojne drogi, idealne na relaks.</dd>
+            </dl>
         </section>
-        <section id="right">
-            <section id="upper">
-                <h2 style="text-align: center;">Co kupić?</h2>
+
+        <div id="right-sections">
+            <section id="right1">
+                <h2>Co kupić?</h2>
                 <ol>
                     <li>Honda CBR125R</li>
                     <li>Yamaha YBR125</li>
@@ -26,13 +41,21 @@
                     <li>BMW R1200GS LC</li>
                 </ol>
             </section>
-            <section id="lower">
-                <p>Jirden</p>
+
+            <section id="right2">
+                <h2>Statystyki</h2>
+                <p>Wpisanych wycieczek: <span id="wycieczki"></span></p>
+                <p>Użytkowników forum: 200</p>
+                <p>Przesłanych zdjęć: 1300</p>
             </section>
-        </section> 
-    </main>
-    <footer id="footer">
-        <p>Stronę wykonał: </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Stronę wykonał: <span id="numer-studenta"></span></p>
     </footer>
+
+    
 </body>
 </html>
