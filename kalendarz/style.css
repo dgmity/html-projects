@@ -1,0 +1,64 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    background-image: url('170838-novyj_god-rozhdestvo-ves_moj_mir-svet-mir-2560x1440.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    font-size: 150%;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 20px;
+    background-color: rgb(1, 142, 123);
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(6, 100px);
+    grid-template-columns: repeat(4, 100px);
+    gap: 5px;
+    align-content: center;
+    justify-content: center;
+}
+
+.grid-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.71);
+    border: 2px solid black;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.grid-item:hover .tooltip {
+    display: block;
+}
