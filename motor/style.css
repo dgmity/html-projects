@@ -1,48 +1,85 @@
-html, body {
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+* {
+    font-family: Verdana, sans-serif;
 }
 
-.image-motor {
-    position: absolute;
-    z-index: -1;
+body {
+    background-image: url('motor.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 
-#container {
+header {
+    background-color: rgba(60, 120, 160, 0.9); 
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    padding: 10px;
+}
+
+
+#content {
     display: flex;
-    height: 100vh;
+    flex-direction: row; 
+    justify-content: flex-start;
+    gap: 10px; 
+    margin: 2%;
 }
 
 #left {
     background-color: rgba(0, 100, 0, 0.6);
-    margin: 2%;
-    width: 75%;
+    width: 75%; 
     height: 600px;
     font-size: 120%;
-    box-shadow: 10px;
+    overflow: auto;
+    box-shadow: 10px 10px 7px DimGray;
 }
 
-#right {
-    background-color: rgba(0,100,0,0.6);
-    margin: 1%;
-    width: 15%;
+#right1, #right2 {
+    background-color: rgba(0, 100, 0, 0.6); 
     height: 300px;
-}
-
-#upper {
-
-}
-
-#lower {
-
-}
-
-#header {
-    background-color: rgba(60, 120, 160, 0.9);
+    box-shadow: 10px 10px 7px DimGray;
     color: white;
-    font-size: 150%;
     padding: 10px;
+    width: 100%; 
+}
+
+#right1, #right2 {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+footer {
+    background-color: rgba(60, 120, 160, 0.9); 
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    display: block;
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    z-index: -1;
+}
+a
+h1, h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+#left dl dt {
+    color: white;
+}
+
+#left dl dd {
+    margin: 1% 0;
+}
+
+#left dl dt:hover {
+    background-color: LightGreen;
 }
