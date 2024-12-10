@@ -1,0 +1,17 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+}
+
+.element {
+    height: 200px;
+    border: 1px solid black;
+}
+
+#element1 {
+    background-color: yellow;
+}
+
+#element4 {
+    background-color: yellow;
+}
