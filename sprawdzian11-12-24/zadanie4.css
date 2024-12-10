@@ -1,0 +1,12 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    margin: 20px;
+    padding: 10px;
+}
+
+span {
+    color: rgba(111, 178, 232, 0.5)
+}
