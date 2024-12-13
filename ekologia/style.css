@@ -20,6 +20,10 @@ html, body {
     background-image: url('https://img.freepik.com/premium-zdjecie/naturalne-zielone-liscie-rosliny-wiosenne-tlo-srodowisko-ekologia-zielen-tapety-generatywne-ai_538159-8497.jpg');
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 #main {
     display: flex; 
     flex-direction: row; 
