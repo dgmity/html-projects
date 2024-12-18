@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma IT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <section id="main-header">
+            <div id="logo">
+                <img src="logo.png" alt="firma it">
+            </div>
+            <nav id="nav">
+                <a href="index.html">Strona Główna</a>
+                <a href="uslugi.html">Usługi</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+        </section>
+        <section id="baner">
+            <img src="animacja.gif" alt="Usługi informatyczne">
+        </section>
+    </header>
+    <main>
+        <h2>Kontakt</h2>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="imie">Imię:</label></td>
+                    <td><input type="text" id="imie" name="imie" required></td>
+                </tr>
+                <tr>
+                    <td><label for="nazwisko">Nazwisko:</label></td>
+                    <td><input type="text" id="nazwisko" name="nazwisko" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="zgłoszenie">Zgłoszenie:</label></td>
+                    <td><textarea id="zgłoszenie" name="zgłoszenie" rows="10" cols="40" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="regulamin">Zapoznałam/em się z regulaminem</label></td>
+                    <td><input type="checkbox" id="regulamin" name="regulamin" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="reset" class="button">Resetuj</button>
+                        <button type="submit" class="button">Prześlij</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <hr>
+    </main>
+    <footer>
+        <div id="footer">
+            <p>Autor strony: <strong><mark>123456</mark></strong></p> 
+        </div>        
+    </footer>
+</body>
+</html>

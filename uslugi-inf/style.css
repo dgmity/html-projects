@@ -1,0 +1,72 @@
+html, body {
+    background-color: #EEEEEE;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    height: 300px;
+    position: relative;
+}
+
+#main-header {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    background-color: lightblue;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+#logo {
+    width: 100px; 
+    height: auto; 
+}
+
+#nav {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: navy;
+    font-size: 150%;
+    text-decoration: none;
+    margin: 0 5px; 
+}
+
+a:hover {
+    text-decoration: none;
+    border: 1px solid navy;
+}
+
+#baner {
+    background-color: #DDDDDD;
+    height: 200px;
+}
+
+main {
+    color: navy;
+    margin: 50px;
+    height: 400px;
+}
+
+#footer {
+    display: flex;
+    align-items: end;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+
+
+
+
