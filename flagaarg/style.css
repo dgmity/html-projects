@@ -1,0 +1,27 @@
+#first {
+    background-color: #6CACE4;
+    height: 100px;
+    width: 400px;
+}
+
+#second {
+    display: flex;
+    background-color: white;
+    height: 100px;
+    width: 400px;
+    justify-content: center;
+}
+#third {
+    background-color: #6CACE4;
+    height: 100px;
+    width: 400px;
+}
+
+#flaga {
+    border: 2px solid black;
+    width: 400px;
+}
+
+img {
+    align-self: center;
+}
