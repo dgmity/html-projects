@@ -1,0 +1,31 @@
+.t1 {
+    font-size: larger;
+    font-style: italic;
+    color:burlywood;
+}
+
+#foto {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+#opis {
+    border: 3px solid black;
+    margin: 20px;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%;
+
+}
+
+#foto:hover {
+    height: 700px;
+    width: 1000px;
+}
+
+#opis:hover {
+    background-color: pink;
+}
