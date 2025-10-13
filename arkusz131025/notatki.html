@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planer zadań</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+    <aside>
+        <img src="obraz.jpg" alt="notatki">
+    </aside>
+
+    <section id="right">
+        <header>
+            <h2>Moje zadania</h2>
+        </header>
+        <nav>
+            <form id="formularz">
+                <input type="text" id="nowezadanie" placeholder="Dodaj zadania...">
+                <button type="submit" onclick="">Dodaj</button>
+            </form>
+        </nav>
+        <main>
+            <ul id="listazadan">
+                <li>
+                    <p>Wyprowadzić psa</p>
+                    <button type="button" onclick="done()">Wykonane</button>
+                </li>
+                <li>
+                    <p>Gimnastyka</p>
+                    <button type="button">Wykonane</button>
+                </li>
+                <li>
+                    <p>Zakupy</p>
+                    <button type="button">Wykonane</button>
+                </li>
+                <li>
+                    <p>Spacer z kumplem</p>
+                    <button type="button">Wykonane</button>
+                </li>
+                <li>
+                    <p>Odrabianie lekcji z młodszą siostrą</p>
+                    <button type="button">Wykonane</button>
+                </li>
+                <li>
+                    <p>Projekt na geografię</p>
+                    <button type="button">Wykonane</button>
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <h3>Notatki: Maksim Buranok</h3>
+        </footer>
+    </section>
+</body>
+</html>
