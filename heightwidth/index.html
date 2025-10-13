@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokument HTML z elementami <div></title>
+    <style>
+        /* Pierwszy div */
+        #div1 {
+            width: 300px;
+            height: 200px;
+            background-color: lightblue;
+        }
+
+        /* Drugi div */
+        #div2 {
+            width: 50%;
+            height: 150px;
+            background-color: lightgreen;
+        }
+
+        /* Trzeci div */
+        #div3 {
+            width: 100%;
+            max-width: 600px;
+            height: 100px;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+
+    <!-- Wnioski dotyczące działania width i max-width -->
+    <script>
+        // Wnioski:
+        // 1. "width" wyrażone w procentach ustawia szerokość elementu w stosunku do szerokości jego elementu nadrzędnego.
+        //    W przypadku #div2, ponieważ jego szerokość wynosi 50%, zajmuje on połowę szerokości dostępnej przestrzeni w oknie przeglądarki.
+        //
+        // 2. "max-width" ogranicza szerokość elementu, jeśli szerokość ustawiona w "width" lub obliczona na podstawie innych właściwości (np. procentów) 
+        //    jest większa niż wartość "max-width". W przypadku #div3, gdy szerokość okna przeglądarki przekroczy 600px, jego szerokość nie będzie rosła 
+        //    powyżej 600px, mimo że ustawiona jest na 100%.
+    </script>
+
+</body>
+</html>
