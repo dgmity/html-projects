@@ -1,0 +1,45 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px);
+}
+
+div {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Gnome-system-log-out.svg/250px-Gnome-system-log-out.svg.png');
+}
+
+.div1 {
+    background-position: top left;
+}
+
+.div2 {
+    background-position: top right;
+}
+
+.div3 {
+    background-position: top center;
+}
+
+.div4 {
+    background-position: left top;
+}
+
+.div5 {
+    background-position: left bottom;
+}
+
+.div6 {
+    background-position: bottom center;
+}
+
+.div7 {
+    background-position: bottom left;
+}
+
+.div8 {
+    background-position: bottom right;
+}
+
+.div9 {
+    background-position: right top;
+}

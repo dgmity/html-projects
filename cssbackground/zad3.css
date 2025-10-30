@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 60vh; 
+  background-image: url('https://www.visit-belarus.com/wp-content/uploads/2016/07/grodno_tio-by-1.jpg');
+  background-size: cover; 
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: white; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}

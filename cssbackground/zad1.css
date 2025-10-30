@@ -1,0 +1,20 @@
+header, main, footer {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    background-color:darkkhaki;
+    color: black;
+}
+
+main {
+    background-color: aquamarine;
+    color: black;
+}
+
+footer {
+    background-color: coral;
+    color: white;
+}

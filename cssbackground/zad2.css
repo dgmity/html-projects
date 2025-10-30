@@ -1,0 +1,17 @@
+body {
+    background-color: white;
+}
+#pierwszy {
+    height: 300px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#drugi {
+    height: 300px;
+    width: 200px;
+    background-color: rgb(233, 150, 122);
+    opacity: 0.3;
+}
+
+/* rgba dla tła, opacity dla całego bloku */

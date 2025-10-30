@@ -1,0 +1,33 @@
+#firstrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: darksalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#secondrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+header {
+    text-align: center;
+    font-family: system-ui;
+}
+
+a {
+    font-size: 20px;
+}
