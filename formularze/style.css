@@ -14,3 +14,15 @@ button {
     background-color: white;
     color: black;
 }
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
