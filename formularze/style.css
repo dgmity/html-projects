@@ -1,0 +1,16 @@
+* {
+    font-family: verdana;
+    background-color: #616d80;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(1fr, 5);
+    grid-template-rows: repeat(1fr, 5);
+}
+
+button {
+    background-color: white;
+    color: black;
+}
