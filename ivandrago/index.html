@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocky</title>
+
+    <style>
+        .punch-100 {
+            color: red;
+            font-size: larger;
+            font-family: Verdana;
+        }
+
+        .error-input {
+            border: 2px solid red;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="inp1">Podaj siłę ciosu: </label>
+        <input type="text" id="inp1"><br>
+
+        <button type="button" onclick="checkData()">Sprawdź</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function checkData() {
+            const input = document.getElementById('inp1');
+            const output = document.getElementById('result');
+            const val = input.value.trim();
+            const power = Number(val);
+
+            output.classList.remove('punch-100');
+            output.textContent = "";
+
+            input.classList.remove('error-input');
+
+            if (val === "") {
+                output.textContent = "Podaj wartość – bez tego nie ma walki.";
+                input.classList.add('error-input');
+                return; 
+            }
+            
+            if (isNaN(power)) {
+                output.textContent = "To nie jest liczba.";
+                input.classList.add('error-input');
+                return;
+            }
+
+            if (power < 0) {
+                output.textContent = "Podaj liczbę większą od 0!";
+                input.classList.add('error-input');
+            } else if (power < 30) {
+                output.textContent = "Za słaby cios – Rocky nawet tego nie poczuł.";
+            } else if (power <= 69) {
+                output.textContent = "Walka wyrównana – Drago nadal groźny.";
+            } else if (power <= 99) {
+                output.textContent = "Mocny cios – Drago ma przewagę.";
+            } else {
+                output.textContent = "IF HE DIES, HE DIES – Drago wygrywa walkę.";
+                output.classList.add('punch-100');
+            }
+        }
+    </script>
+</body>
+</html>
