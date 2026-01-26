@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS checked, input, select</title>
+</head>
+<body>
+    <form>
+        <h3>Oblicz miesięczną ratę</h3>
+
+        <input type="checkbox" name="course" id="inp1" value="5000"><label for="inp1">Kurs React.js</label><br>
+        <input type="checkbox" name="course" id="inp2" value="3000"><label for="inp2">Kurs JavaScript</label><br>
+
+        <label for="inp3">Liczba rat: </label><input type="number" id="inp3"><br>
+
+        <select id="inp4">
+            <option value="Warszawa">Warszawa</option>
+            <option value="Katowice">Katowice</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select><br>
+
+        <button type="button" id="show-result">Oblicz</button>
+    </form>
+
+    <p id="display"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
