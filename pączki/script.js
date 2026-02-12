@@ -13,6 +13,8 @@ function caloriesCounter() {
 
         total_calories *= Number(document.querySelector('#amount').value);
 
+        display.style.display = 'block';
+
         if (total_calories < 2000) {
             display.textContent = `Smacznego! Zjadasz ${total_calories} kcal`;
         } 
