@@ -1,5 +1,8 @@
-/* 1. Подключаем шрифт с поддержкой жирного начертания */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+* {
+    box-sizing: border-box; /* Dzięki temu padding nie rozpycha elementów */
+}
 
 body {
     margin: 0;
@@ -8,14 +11,14 @@ body {
     background: url('https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1920&auto=format&fit=crop') no-repeat center center fixed;
     background-size: cover;
     display: flex;
+    flex-direction: column; /* Ustawia formularz i podpis w pionie */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-/* 2. ТЕМНАЯ КАРТОЧКА (для максимальной четкости текста) */
 form {
-    background: rgba(0, 0, 0, 0.65); /* Темный фон с прозрачностью */
+    background: rgba(0, 0, 0, 0.65);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -32,28 +35,28 @@ h1 {
     font-weight: 900;
     font-size: 2rem;
     margin-bottom: 30px;
-    color: #fff;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
-/* 3. ЧЕТКИЕ МЕТКИ (LABEL) */
 label {
     display: block;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 0.95rem;
-    color: #ff85b3; /* Насыщенный розовый, который видно на темном */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    color: #ff85b3;
 }
 
-/* 4. ИНПУТЫ И СЕЛЕКТЫ */
+/* WSZYSTKIE GŁÓWNE ELEMENTY MAJĄ TERAZ TEN SAM ROZMIAR */
+select, 
+input[type="number"],
+.checkbox-group {
+    width: 100%; 
+    margin-bottom: 25px;
+}
+
 select, 
 input[type="number"] {
-    width: 100%;
     padding: 14px;
-    margin-bottom: 25px;
     border: 2px solid transparent;
     border-radius: 12px;
     background: white;
@@ -63,40 +66,23 @@ input[type="number"] {
     outline: none;
 }
 
-select:focus, 
-input[type="number"]:focus {
-    border-color: #ff6bad;
-}
-
-/* 5. ЧЕКБОКСЫ С ГРУППИРОВКОЙ */
 .checkbox-group {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.08); /* Легкий фон для зоны клика */
+    background: rgba(255, 255, 255, 0.08);
     padding: 12px;
     border-radius: 10px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.checkbox-group:hover {
-    background: rgba(255, 255, 255, 0.15);
-}
-
-input[type="checkbox"] {
-    width: 22px;
-    height: 22px;
-    margin-right: 15px;
-    accent-color: #ff6bad;
     cursor: pointer;
 }
 
-/* 6. КНОПКА (яркая и заметная) */
+.checkbox-group label {
+    margin-bottom: 0; /* Usuwamy margines wewnątrz grupy */
+    margin-left: 10px;
+}
+
 #btn1 {
     width: 100%;
     padding: 18px;
-    margin-top: 10px;
     border: none;
     border-radius: 15px;
     background: linear-gradient(45deg, #ff4d94, #ff85b3);
@@ -106,22 +92,26 @@ input[type="checkbox"] {
     text-transform: uppercase;
     cursor: pointer;
     box-shadow: 0 5px 20px rgba(255, 77, 148, 0.4);
-    transition: 0.3s;
 }
 
-#btn1:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 25px rgba(255, 77, 148, 0.6);
-}
-
+/* WYNIK UKRYTY DOMYŚLNIE */
 #display {
+    display: none; 
     margin-top: 30px;
     font-size: 1.3rem;
     text-align: center;
     font-weight: 700;
-    color: #fff;
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     border-left: 5px solid #ff6bad;
+}
+
+/* PODPIS NA DOLE */
+#sigma {
+    font-size: 1rem;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
