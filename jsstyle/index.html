@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmiana style w JS</title>
+</head>
+<body>
+    <div>
+        <p id="tekst1">To jest tekst 1</p>
+        <p id="tekst2">To jest tekst 2</p>
+        <p id="tekst3">To jest tekst 3</p>
+
+        <button type="button" id="btn1">Zmien style</button>
+    </div>
+
+    <script>
+        function changeStyle() {
+            let btn = document.querySelector("#btn1");
+            
+            let tekst1 = document.querySelector("#tekst1");
+            let tekst2 = document.querySelector("#tekst2");
+            let tekst3 = document.querySelector("#tekst3");
+
+            btn.addEventListener("click", () => {
+                tekst1.style.color = "blue";
+                tekst2.style.fontFamily = "Arial";
+                tekst3.style.fontSize = "50px";
+            })
+        }
+
+        changeStyle();
+    </script>
+</body>
+</html>
