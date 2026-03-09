@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #kontener {
+            display: flex;
+        }
+        
+        aside {
+            width: 30%;
+        }
+
+        main {
+            width: 70%;
+            display: flex;
+        }
+
+        .kwadrat {
+            width: 50px;
+            height: 50px;
+            visibility: hidden;
+        }
+
+        #div1 { background-color: red; }
+        #div2 { background-color: green; }
+        #div3 { background-color: blue; }
+    </style>
+</head>
+<body>
+
+    <div id="kontener">
+        <aside>
+            <button onclick="pokaz('div1')">Pokaż div 1</button>
+            <button onclick="pokaz('div2')">Pokaż div 2</button>
+            <button onclick="pokaz('div3')">Pokaż div 3</button>
+        </aside>
+
+        <main>
+            <div id="div1" class="kwadrat"></div>
+            <div id="div2" class="kwadrat"></div>
+            <div id="div3" class="kwadrat"></div>
+        </main>
+    </div>
+
+    <script>
+        function pokaz(id) {
+            document.getElementById(id).style.visibility = 'visible';
+        }
+    </script>
+
+</body>
+</html>
