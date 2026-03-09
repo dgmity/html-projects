@@ -1,0 +1,70 @@
+* {
+    text-align: center;
+    font-family: Georgia;
+}
+
+head, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer, header {
+    background-color: Tomato;
+    color: mistyrose;
+    padding: 10px;
+}
+
+nav {
+    width: 20%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#left-2, #left-3 {
+    background-color: #FFAEA5;
+    height: 170px;
+    font-size: 200%;
+}
+
+#left-1 {
+    background-color: mistyrose;
+    height: 170px;
+    font-size: 200%;
+}
+
+main {
+    background-color: mistyrose;
+    width: 80%;
+    height: 510px;
+    overflow: auto;
+}
+
+#right-2, #right-3 {
+    visibility: hidden;
+    display: none;
+}
+
+table {
+    margin: auto;
+    width: 60%;
+    border: 1px dotted indigo;
+}
+
+select, button {
+    margin: 20px;
+}
+
+dt {
+    font-weight: bold;
+    font-style: italic;
+}
+
+dt:hover {
+    font-size: 180%;
+}
+
+footer {
+    clear: both;
+}
+
