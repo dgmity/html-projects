@@ -65,4 +65,15 @@ function pierwszaIDruga() {
 
 function wOddzielnychLiniach() {
     wyswietl(auta.join("<br>"));
+
+}
+
+function showWithID() {
+    let show_tekst = ""
+
+    for (i=0; i < auta.length; i++) {
+        show_tekst += `${i} ${auta[i]} <br>`;
+    }
+
+    wyswietl(show_tekst);
 }
