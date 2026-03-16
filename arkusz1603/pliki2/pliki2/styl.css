@@ -1,0 +1,91 @@
+* {
+    font-family: Garamond;
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+}
+
+#left {
+    width: 80%;
+    float: left; 
+}
+
+header {
+    background-color: Tomato;
+    color: white;
+    text-align: center;
+    height: 80px;
+    padding-top: 10px;
+}
+
+main {
+    padding: 10px;
+}
+
+aside {
+    background-color: Coral;
+    width: 20%;
+    height: 680px;
+    float: left; 
+    padding: 10px;
+}
+
+footer {
+    background-color: Tomato;
+    color: white;
+    text-align: center;
+    clear: both; 
+    padding: 5px;
+}
+
+#chat {
+    border: 1px solid Tomato;
+    margin-bottom: 20px;
+    height: 470px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.wyp_j, .wyp_k {
+    border-radius: 5px;
+    width: 90%;
+    min-height: 70px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center; 
+}
+
+.wyp_j {
+    background-color: #EEE;
+    align-self: flex-start; 
+}
+
+.wyp_k {
+    background-color: #CCC;
+    align-self: flex-end; 
+    flex-direction: row-reverse; 
+    text-align: right;
+}
+
+img {
+    border-radius: 50%;
+    height: 60px; 
+    width: 60px;
+    margin: 0 10px;
+}
+
+input {
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: Tomato;
+    border: 1px solid darkred;
+    padding: 5px 15px;
+    font-weight: bold;
+}
