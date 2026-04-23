@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pola figur</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h2>Pola figur płaskich</h2>
+    </header>
+    <main>
+        <nav>
+            <h3>MENU</h3>
+            <ul>
+                <li><a href="index.html">Prostokąt i trójkąt</a></li>
+                <li><a href="kolo.html">Okrąg i koło</a></li>
+            </ul>
+        </nav>
+        <section>
+            <img src="1d.bmp" alt="Figura" id="big-img"><br>
+            <img src="1m.bmp" class="image" alt="Wybierz trójkąt" onclick="changeImage('1d.bmp');">
+            <img src="2m.bmp" class="image" alt="Wybierz prostokąt" onclick="changeImage('2d.bmp');">
+        </section>
+        <aside>
+            <h3>Pole prostokąta / pole trójkąta</h3>
+            <label for="inp1">Bok prostokąta / podstawa trójkąta:</label>
+            <input type="text" id="inp1"><br>
+
+            <label for="inp2">Drugi bok prostokąta / wysokość trójkąta:</label>
+            <input type="text" id="inp2"><br>
+
+            <button type="button" onclick="calculate();">Oblicz</button>
+
+            <p id="res"></p>
+        </aside>
+    </main>
+    <footer>
+        <p>Autor: Maksim Buranok</p>
+    </footer>
+
+
+    <script>
+        function changeImage(fileName) {
+            let bigImg = document.querySelector("#big-img");
+
+            bigImg.src = fileName;
+        }
+
+        function calculate() { 
+            let a = Number(document.getElementById('inp1').value);
+            let b = Number(document.getElementById('inp2').value);
+            let bigImg = document.getElementById('big-img').src;
+            let resElement = document.getElementById('res');
+            let resultat = 0;
+
+            if (bigImg.includes('1d.bmp')) {
+                resultat = 0.5 * a * b;
+                resElement.innerHTML = resultat;
+            } 
+            else if (bigImg.includes('2d.bmp')) {
+                resultat = a * b;
+                resElement.innerHTML = resultat;
+            }
+        }
+    </script>
+</body>
+</html>
