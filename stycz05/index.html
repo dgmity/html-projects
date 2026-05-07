@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZGŁOSZENIA</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h1>Zgłoszenia wydarzeń</h1>
+    </header>
+    <main>
+        <section id="left">
+            <h2>Personel</h2>
+
+            <form>
+                <input type="radio" value="Policjant" id="inp1" name="radio" checked>
+                <label for="inp1">Policjant</label>
+
+                <input type="radio" value="Ratownik" id="inp2" name="radio">
+                <label for="inp2">Ratownik</label>
+
+                <input type="submit" value="Pokaż" class="przycisk">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Imię</th>
+                        <th>Nazwisko</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+        <section id="right">
+            <h2>Nowe zgłoszenie</h2>
+            <ol>
+                <li></li>
+            </ol>
+
+            <form>
+                <label for="inp3">Wybierz id osoby z listy:</label>
+                <input type="number" id="inp4">
+
+                <input type="submit" value="Dodaj zgłoszenie" class="przycisk">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Stronę wykonał: maksim buranok</p>
+    </footer>
+</body>
+</html>
