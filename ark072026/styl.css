@@ -1,0 +1,74 @@
+body {
+    font-family: Georgia, serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.naglowek1, .naglowek2 {
+    background-color: #388E3C;
+    color: white;
+    height: 100px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.naglowek1 {
+    width: 20%;
+}
+
+.naglowek2 {
+    width: 80%;
+}
+
+.glowny {
+    clear: both;
+}
+
+.lewy, .prawy {
+    background-color: #DCE775;
+    width: 50%;
+    height: 600px;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 20px; 
+}
+
+
+.stopka {
+    background-color: #388E3C;
+    color: white;
+    clear: both;
+    box-sizing: border-box;
+}
+
+
+table {
+    width: 80%;
+    margin: auto;
+    border: 2px dashed #388E3C;
+    border-collapse: collapse; 
+}
+
+
+table img {
+    height: 70px;
+}
+
+
+a {
+    color: #388E3C;
+    margin: 20px;
+    font-style: italic;
+    font-size: 200%;
+    display: inline-block; 
+}
+
+a:hover {
+    background-color: #388E3C;
+    color: #DCE775;
+}
+
+p {
+    margin: 0px;
+}
