@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Stylizacja paznokci</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+    <aside>
+        <img src="manicure.jpg" alt="Stylizacja paznokci">
+    </aside>
+
+    <main>
+        <header>
+            <h1>Twoje wymarzone paznokcie</h1>
+        </header>
+
+        <nav>
+            <button id="btn-kolor" onmouseover="pokazSekcje('kolor')">Kolor</button>
+            <button id="btn-ksztalt" onmouseover="pokazSekcje('ksztalt')">Kształt</button>
+            <button id="btn-wzor" onmouseover="pokazSekcje('wzor')">Wzór</button>
+        </nav>
+
+        <section id="sekcja-kolor">
+            <h2>Kolor</h2>
+            <img src="kolor.png" alt="Kolory paznokci">
+            <br>
+            <input type="color" value="#FF0000">
+        </section>
+
+        <section id="sekcja-ksztalt">
+            <h2>Kształt</h2>
+            <img src="ksztalt.png" alt="Kształty paznokci">
+            <br>
+            <select>
+                <option value="migdał">migdał</option>
+                <option value="zaokrąglony">zaokrąglony</option>
+                <option value="kwadratowy">kwadratowy</option>
+                <option value="balerina">balerina</option>
+                <option value="zaokrąglony kwadrat">zaokrąglony kwadrat</option>
+            </select>
+        </section>
+
+        <section id="sekcja-wzor">
+            <h2>Wzór</h2>
+            <div id="kontener-wzorow"></div>
+            <br>
+            <input type="number" min="1" max="10">
+        </section>
+    </main>
+
+    <footer>
+        <p>Autor strony: Maksim Buranok</p>
+    </footer>
+
+    <script>
+        const kontener = document.getElementById('kontener-wzorow');
+        for (let i = 1; i <= 10; i++) {
+            const img = document.createElement('img');
+            img.src = i + '.jpg';
+            img.className = 'wzory';
+            img.title = i;
+            kontener.appendChild(img);
+        }
+
+        function pokazSekcje(typ) {
+            const s1 = document.getElementById('sekcja-kolor');
+            const s2 = document.getElementById('sekcja-ksztalt');
+            const s3 = document.getElementById('sekcja-wzor');
+            
+            const b1 = document.getElementById('btn-kolor');
+            const b2 = document.getElementById('btn-ksztalt');
+            const b3 = document.getElementById('btn-wzor');
+
+            if (typ === 'kolor') {
+                s1.style.display = 'block';
+                s2.style.display = 'none';
+                s3.style.display = 'none';
+                
+                b1.style.backgroundColor = 'Salmon';
+                b2.style.backgroundColor = 'Crimson';
+                b3.style.backgroundColor = 'Crimson';
+            } else if (typ === 'ksztalt') {
+                s1.style.display = 'none';
+                s2.style.display = 'block';
+                s3.style.display = 'none';
+                
+                b1.style.backgroundColor = 'Crimson';
+                b2.style.backgroundColor = 'Salmon';
+                b3.style.backgroundColor = 'Crimson';
+            } else if (typ === 'wzor') {
+                s1.style.display = 'none';
+                s2.style.display = 'none';
+                s3.style.display = 'block';
+                
+                b1.style.backgroundColor = 'Crimson';
+                b2.style.backgroundColor = 'Crimson';
+                b3.style.backgroundColor = 'Salmon';
+                
+            }
+        }
+    </script>
+</body>
+</html>
